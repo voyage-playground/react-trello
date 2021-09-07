@@ -1,5 +1,6 @@
 import { Block, Provider } from '@actovos-consulting-group/ui-core';
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import Board from 'react-trello';
 import styled, { createGlobalStyle, css } from 'styled-components';
 import styledNormalize from 'styled-normalize';
@@ -100,13 +101,28 @@ const StyledBoard = styled(Board)`
 `;
 
 const App = () => {
+  const [lanes, setLanes] = useState({ lanes: [] });
+
+  const fetch = async () => {
+    const { data } = await axios.get('http://localhost:8080/board');
+    setLanes(data);
+  };
+
+  useEffect(() => {
+    fetch();
+  }, []);
+
+  const handleUpdate = async (data) => {
+    await axios.post('http://localhost:8080/board', data);
+  };
+
   return (
     <Provider>
       <Block p={20} bg="white" style={{ textAlign: 'center' }}>
         <img src={Ship} style={{ width: 50 }} alt="Voyage" />
       </Block>
       <Block p={20}>
-        <StyledBoard data={data} editable />
+        <StyledBoard onDataChange={handleUpdate} data={lanes} editable />
         <GlobalStyle />
       </Block>
     </Provider>
