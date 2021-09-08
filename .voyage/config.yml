@@ -1,0 +1,12 @@
+services:
+  app:
+    context: ./
+    primary: true
+    exposePort: 80
+    environment:
+      - name: REACT_APP_URL
+        value: 'https://${VOYAGE_SERVICE_API_URL}'
+  api:
+    context: ./
+    externalUrl: https://github.com/voyage-playground/react-trello-api
+    exposePort: 8080
