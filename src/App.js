@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Board from 'react-trello';
 import styled, { createGlobalStyle, css } from 'styled-components';
 import styledNormalize from 'styled-normalize';
-import Ship from './img/ship_grey.png';
+import Ship from './img/voyage-white.png';
 
 const GlobalStyle = createGlobalStyle(
   () => css`
@@ -72,8 +72,8 @@ const App = () => {
 
   return (
     <Provider>
-      <Block p={20} bg="white" style={{ textAlign: 'center' }}>
-        <img src={Ship} style={{ width: 50 }} alt="Voyage" />
+      <Block bg="#ff4d86" p={10}>
+        <img src={Ship} style={{ width: 30 }} alt="Voyage" />
       </Block>
       <Block p={20}>
         <StyledBoard onDataChange={handleUpdate} data={lanes} editable />
