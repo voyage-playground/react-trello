@@ -227,46 +227,6 @@ db.boards.insert([
               'Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum.',
             label: '8/17/2021',
           },
-          {
-            id: 6,
-            title:
-              'Zulu Papa Hotel India Echo X-ray Bravo Juliett Mike Oscar Quebec Foxtrot Sierra Victor November Golf Alfa Charlie Delta Tango',
-            description:
-              'Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-            label: '12/6/2020',
-          },
-          {
-            id: 7,
-            title:
-              'Whiskey Papa Juliett Zulu Hotel Lima Romeo Uniform Yankee Tango Bravo Sierra Echo Delta X-ray Alfa',
-            description:
-              'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh.',
-            label: '1/11/2021',
-          },
-          {
-            id: 8,
-            title:
-              'Delta Golf X-ray Papa Echo Romeo Oscar Quebec Kilo Hotel Zulu Yankee India',
-            description:
-              'Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.',
-            label: '11/26/2020',
-          },
-          {
-            id: 9,
-            title:
-              'Juliett India Foxtrot Kilo Lima Romeo X-ray Uniform Delta Papa Oscar Charlie Alfa Yankee',
-            description:
-              'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc.',
-            label: '12/10/2020',
-          },
-          {
-            id: 10,
-            title:
-              'Alfa X-ray Foxtrot Hotel Bravo Mike Uniform Echo Papa Juliett Quebec Delta India',
-            description:
-              'Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus.',
-            label: '7/27/2021',
-          },
         ],
       },
       {
@@ -289,30 +249,6 @@ db.boards.insert([
             description:
               'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.',
             label: '5/25/2021',
-          },
-          {
-            id: 3,
-            title:
-              'Whiskey Victor Mike Echo Zulu Kilo Yankee Romeo Uniform Bravo India',
-            description:
-              'Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.',
-            label: '3/28/2021',
-          },
-          {
-            id: 4,
-            title:
-              'Charlie Uniform X-ray Foxtrot Delta Juliett Lima Alfa Sierra Zulu Golf India Romeo Mike Papa',
-            description:
-              'Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus.',
-            label: '5/25/2021',
-          },
-          {
-            id: 5,
-            title:
-              'Mike Oscar Uniform Quebec Romeo Alfa Sierra X-ray Zulu Bravo Hotel November India Papa Echo Delta Lima Tango',
-            description:
-              'Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante.',
-            label: '1/17/2021',
           },
         ],
       },
