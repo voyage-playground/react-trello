@@ -26,7 +26,8 @@ services:
       - name: MONGO_INITDB_DATABASE
         value: trello_clone
   databasegui:
-    image: huggingface/mongoku
+    context: ./.voyage
+    dockerfile: ./.voyage/Dockerfile.mongoku
     exposePort: 3100
     environment:
       - name: MONGOKU_DEFAULT_HOST
