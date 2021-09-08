@@ -1,6 +1,6 @@
 services:
   app:
-    context: ./
+    context: ./.voyage/Dockerfile
     primary: true
     exposePort: 80
     environment:
