@@ -1,4 +1,10 @@
-import { Block, Provider } from '@actovos-consulting-group/ui-core';
+import {
+  Block,
+  Flex,
+  Provider,
+  Text,
+  Toaster,
+} from '@actovos-consulting-group/ui-core';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Board from 'react-trello';
@@ -55,11 +61,13 @@ const instance = axios.create({
 });
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
   const [lanes, setLanes] = useState({ lanes: [] });
 
   const fetch = async () => {
     const { data } = await instance.get('/board');
     setLanes(data);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -68,17 +76,24 @@ const App = () => {
 
   const handleUpdate = async (data) => {
     await instance.post('/board', data);
+    Toaster.alert({ variant: 'success', value: 'Updated Board!' });
   };
 
   return (
     <Provider>
-      <Block bg="#ff4d86" p={10}>
+      <Flex alignItems="center" bg="#ff4d86" p={10}>
         <img src={Ship} style={{ width: 30 }} alt="Voyage" />
-      </Block>
+        <Text ml={20} fontSize={16} color="white">
+          Software Development Tasks
+        </Text>
+      </Flex>
       <Block p={20}>
-        <StyledBoard onDataChange={handleUpdate} data={lanes} editable />
-        <GlobalStyle />
+        {!loading && (
+          <StyledBoard onDataChange={handleUpdate} data={lanes} editable />
+        )}
       </Block>
+      <GlobalStyle />
+      <Toaster.Provider />
     </Provider>
   );
 };
