@@ -32,3 +32,8 @@ services:
     environment:
       - name: MONGOKU_DEFAULT_HOST
         value: mongodb://root:secret@127.0.0.1:27017
+  redis:
+    image: redis
+    environment:
+      - name: ALLOW_EMPTY_PASSWORD
+        value: 'yes'
