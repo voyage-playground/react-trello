@@ -10,3 +10,17 @@ services:
     context: ./
     externalUrl: https://github.com/voyage-playground/react-trello-api
     exposePort: 8080
+    environment:
+      - name: DB_HOST
+        value: 127.0.0.1
+  database:
+    image: mongo:latest
+    mount:
+      - ./.voyage/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+    environment:
+      - name: MONGO_INITDB_ROOT_USERNAME
+        value: root
+      - name: MONGO_INITDB_ROOT_PASSWORD
+        value: secret
+      - name: MONGO_INITDB_DATABASE
+        value: trello_clone
