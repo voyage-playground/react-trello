@@ -16,6 +16,8 @@ services:
         value: 127.0.0.1
       - name: REDIS_HOST
         value: 127.0.0.1
+      - name: GCP_AUTH_CREDS
+        value: '${GCP_AUTH_CREDS}'
   database:
     image: mongo:latest
     mount:
