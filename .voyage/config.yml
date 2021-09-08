@@ -25,3 +25,9 @@ services:
         value: secret
       - name: MONGO_INITDB_DATABASE
         value: trello_clone
+  databasegui:
+    image: huggingface/mongoku
+    exposePort: 3100
+    environment:
+      - name: MONGOKU_DEFAULT_HOST
+        value: mongodb://root:secret@127.0.0.1:27017
