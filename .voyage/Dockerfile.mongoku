@@ -6,3 +6,4 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
   && rm dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
 COPY ./run-mongoku.sh /app/docker-run.sh
+RUN chmod +x /app/docker-run.sh
