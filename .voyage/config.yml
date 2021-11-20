@@ -31,7 +31,7 @@ services:
         value: trello_clone
   databasegui:
     context: ./.voyage
-    dockerfile: ./.voyage/Dockerfile.mongoku
+    dockerfile: Dockerfile.mongoku
     exposePort: 3100
     environment:
       - name: MONGOKU_DEFAULT_HOST
